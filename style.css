@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 226, 226);
+    font-family: 'Mukta', sans-serif;
+   
+}
+
+.wrapper{
+    width: 25rem;
+    height: 21rem;
+    
+    
+}
+
+header{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / span 8;
+    background-color: #fe2c2c;
+    color: #fff;
+    border-top: solid transparent;
+    border-radius: 5px;
+}
+
+.calendar-date{
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    font-family: 'Mukta', sans-serif;
+    fill: #fff;
+    
+}
+
+main{
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    height: 85%;
+    background-color: transparent;
+}
+
+.calendar-week{
+    display: grid;
+    grid-template: 33px / repeat(7, 1fr);
+    grid-column: 1/-1;
+    gap: 1px;
+    
+    
+}
+
+.weekdays{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 165, 165);  
+}
+
+.calendar-days{
+    height: 100%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(7, 1fr);
+    grid-column: 1/-1;
+    grid-row: 2/ span 7;
+    gap: 1px;
+    border-bottom: solid transparent;
+    border-radius: 15px;
+}
+
+.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;  
+}
+
+.holiday{
+    background-color: rgb(219, 215, 215); 
+}
+
+.calendar-date__month{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.calendar-date__year{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.out{
+    color: rgb(173, 168, 168);
+}
+
+.active:hover{
+    background-color: #fe2c2c;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
