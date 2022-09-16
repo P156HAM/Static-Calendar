@@ -15,6 +15,9 @@ body{
 .wrapper{
     width: 25rem;
     height: 25rem;
+    border: solid transparent;
+    border-radius: 25px;
+    overflow: hidden;
 }
 
 header{
@@ -22,30 +25,26 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column: 1 / span 8;
     background-color: #fe2c2c;
     color: #fff;
-    border-top: solid transparent;
-    border-radius: 5px;
 }
 
 .calendar-date{
     display: flex;
-    justify-content: space-between;
-    width: 12rem;
+    justify-content: center;
+    width: 100%;
 }
 
 button{
     background-color: transparent;
     border: 0px;
     font-family: 'Mukta', sans-serif;
-    fill: #fff;
-    
+    fill: #fff; 
 }
 
 main{
     display: grid;
-    grid-template: 33px 1fr 1fr 1fr 1fr 1fr 1fr 1fr / repeat(8, 1fr);
+    grid-template: 33px repeat(7, 1fr) / repeat(8, 1fr);
     height: 85%;
     background-color: transparent;
 }
